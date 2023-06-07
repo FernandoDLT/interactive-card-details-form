@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url("images/bg-main-mobile.png");
+  background-color: white;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.backCard {
+  background-image: url("images/bg-card-back.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 284px;
+  height: 155px;
+  position: relative;
+  top: 33px;
+  left: 73px;
+  z-index: -1;
+}
+
+.backNumber {
+  color: white;
+  font-size: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 35px;
+}
+
+.frontCard {
+  background-image: url("images/bg-card-front.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 284px;
+  height: 155px;
+  color: white;
+  position: relative;
+  top: -29px;
+  left: 16px;
+  padding-top: 16px;
+}
+
+.circles {
+  display: flex;
+  align-items: center;
+  padding-left: 19px;
+}
+
+.bigCircle {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  background-color: white;
+}
+
+.smallCircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  border: 1px solid white;
+  margin-left: 11px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 39px;
+}
+
+.frontNumber {
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+.form, .formCompleted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+  display: none;
+}
+
+.cardName {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  width: 85%;
+  margin-top: 15px;
+}
+
+.cardHolderName, .cardNumber {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--very-dark-violet);
+  font-weight: bold;
+}
+
+.cardNumber, .dateCvc {
+  margin-top: 22px;
+}
+
+.cardHolderNameInput, .cardHolderNumberInput {
+  width: 310px;
+  height: 41px;
+  border-radius: 10px;
+  text-decoration: none;
+  outline: none;
+  border: 1px solid var(--light-grayish-violet);
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-top: 8px;
+}
+
+.numberError {
+  color: red;
+  display: none;
+}
+
+.dateCvc {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--very-dark-violet);
+  font-weight: bold;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+  width: 192px;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  width: 325px;
+  margin-top: 7px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 30px;
+  position: relative;  
+}
+
+.monthYearError {
+  display: none;
+}
+
+.cvcError {
+  position: absolute;
+  top: 0;
+  right: 60px;
+  display: none;
+}
+
+.inputs input {
+  width: 70px;
+  height: 41px;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  outline: none;
+  border: 1px solid var(--light-grayish-violet);
+  border-radius: 10px;
+}
+
+.inputs .cvc {
+  width: 160px;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.button, .continue {
+  width: 320px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: var(--light-grayish-violet);
+  background-color: var(--very-dark-violet);
+}
+
+.thankYou {
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: var(--dark-grayish-violet);
+  margin-top: 40px;
+}
+
+.added {
+  font-size: 18px;
+  color: var(--very-dark-violet);
+  margin-top: 16px;
+}
+
+.continue {
+  margin-top: 48px;
+}
+
+
+@media only screen and (min-width: 560px) {
+
+  body {
+    background-image: url("images/bg-main-desktop.png");
+    background-position: left;
+  }
+  
+  .backCard {
+    top: 470px;
+    left: 260px;
+    width: 445px;
+    height: 243px;
+  }
+  
+  .backNumber {
+    font-size: 15px;
+    padding-right: 50px;
+  }
+
+  .frontCard {
+    top: -54px;
+    left: 164px;
+    width: 445px;
+    height: 243px;
+    padding-top: 27px;
+  }
+
+  .circles {
+    padding-left: 29px;
+  }
+  
+  .bigCircle {
+    width: 45px;
+    height: 45px;
+  }
+
+  .smallCircle {
+    width: 20px;
+    height: 20px;
+    margin-left: 17px;
+  }
+
+  .details {
+    margin-top: 65px;
+  }
+
+  .frontNumber {
+    font-size: 30px;
+  }
+
+  .cardName {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .form , .formCompleted {
+    align-items: flex-end;
+    padding-right: 210px;
+    position: relative;
+    bottom: 230px;
+  }
+
+  .cardHolderName input,  .cardNumber input {
+    width: 363px;
+    font-size: 22px;
+  }
+
+  .inputs {
+    width: 373px;
+    margin-top: 7px;
+  }
+
+  .inputs input {
+    width: 75px;
+  }
+
+  .inputs .cvc {
+    width: 190px;
+    padding-left: 20px;
+  }
+
+  .button, .continue {
+    width: 370px;
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+:root {
+--white: hsl(0, 0%, 100%);
+--light-grayish-violet: hsl(270, 3%, 87%);
+--dark-grayish-violet: hsl(279, 6%, 55%);
+--very-dark-violet: hsl(278, 68%, 11%)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> *-
